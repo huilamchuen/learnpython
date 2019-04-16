@@ -14,9 +14,9 @@ def printGrade():
        else:
            print('C')
    except Exception as e:
-       print('Error:',e)
+       print('有错误:',e)
    finally:
-       print('finally')
+       print('终止')
 
 
 if __name__ == '__main__':
