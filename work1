@@ -2,8 +2,6 @@ import re
 
 
 def printGrade():
-
-   try:
        grade = int(input("请输入:"))
        if grade > 100:
            print('最高分为100分')
@@ -13,10 +11,6 @@ def printGrade():
            print('B')
        else:
            print('C')
-   except Exception as e:
-       print('有错误:',e)
-   finally:
-       print('终止')
 
 
 if __name__ == '__main__':
