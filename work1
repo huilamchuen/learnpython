@@ -12,6 +12,26 @@ def printGrade():
        else:
            print('C')
 
+def autoPrint():
+    #str
+    a = 'world'
+    print('hello %s' %(a))
+
+    #int
+    b = 23
+    print('hello %s,I am %d' %(a,b))
+
+    #list
+    list = [1,2,3,4]
+    print(list[1])
+
+    for i in list:
+        print(i)
+
+    #dict
+    dict = {'aaa':'aaa','bbb':'bbb'}
+    for key in dict:
+        print(key + '--' + dict[key])
 
 if __name__ == '__main__':
     printGrade()
