@@ -38,6 +38,7 @@ print(name3[1])
 print(name3[-2])
 #字符串切片（截取）
 print(name3[0:5]) #hello
+
 #4.BOOL
 a=True
 b=False
@@ -48,6 +49,7 @@ print(type(b))
 
 #5.list（列表）是一种有序的集合，可以随时添加、修改、删除其中的元素。
 #1.创建列表
+list = []
 list1 = [20,37,39,27,42]
 list2 = [20,30,49,"好日子",True,89.12]
 print(list1)
@@ -68,3 +70,27 @@ print(list2)
 #5.删除元素
 del list2[5]
 print(list2)
+
+'''6.Python 的元组与列表类似，不同之处在于元组的元素不能修改。
+# 元组使用小括号，列表使用方括号。
+'''
+#创建元组
+tup = ()
+tup1 = ('Google', 'baidu', 1997, 2000)
+tup2 = (1, 2, 3, 4, 5)
+print(tup1)
+print(type(tup1))
+#访问元组
+print(tup1[1])
+print(tup1[-1])
+# 以下修改元组元素操作是非法的。
+# tup1[0] = 100
+
+# 创建一个新的元组
+tup3 = tup1 + tup2
+print(tup3)
+#元组中的元素值是不允许删除的，但我们可以使用del语句来删除整个元组
+del tup3
+#print(tup3)
+#元组截取
+print(tup2[0:2]) #(1, 2)
