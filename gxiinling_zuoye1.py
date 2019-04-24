@@ -94,3 +94,13 @@ del tup3
 #print(tup3)
 #元组截取
 print(tup2[0:2]) #(1, 2)
+
+#字典
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+print(dict)
+#访问
+print ("dict['Name']: ", dict['Name'])
+#修改字典
+dict['Age'] = 8 # 更新
+dict['School'] = "中关村小学" # 添加
+print(dict)
