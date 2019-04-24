@@ -33,5 +33,85 @@ def autoPrint():
     for key in dict:
         print(key + '--' + dict[key])
 
+
+def instance():
+
+    #python关键字举例
+    #1:from
+    #from django import apps
+
+    #2:pass
+    #class Student:
+    #    pass
+
+    #3:try..except
+    a=10
+    b=0
+    try:
+        a/b
+    except BaseException as e:
+        print(e)
+    finally:
+        print('always run')
+
+
+
+#判断是否醉酒驾驶
+def drunkDriving(alcohol):
+    if alcohol < 20:
+        print('属于正常驾驶')
+    elif (alcohol>20 or alcohol==20) and alcohol<80:
+        print('属于饮酒驾驶')
+    elif alcohol>80 or alcohol==80:
+        print('属于醉酒驾驶')
+    else:
+        print('其他情况')
+
+
+#求100内的和
+def sum():
+    summ = 0
+    for i in range(1,101):
+        print(i)
+        summ = summ + i
+        i=i+1
+    print("100以内的和为 %d" %(summ))
+
+#打印任意字符
+def printStr(str):
+    for i in range(len(str)):
+        print(str[i])
+
+#打印九九乘法表
+def printChart():
+    for i in range(1,10):
+        for j in range(i):
+            j = j+1
+            print('%d*%d=%-3d' % (j,i,j*i),end="")
+        print('')
+
+#for
+def learnFor():
+    while(True):
+        str = input("请输入:")
+        if str=='bye':
+            print('byebye')
+            break
+
+def learnFor2():
+    sum = 0
+    for i in range(1,101):
+        if i%2==0:
+            continue
+        sum = sum + i
+    print("100以内奇数之和为:%d"% (sum))
+
+
 if __name__ == '__main__':
-    printGrade()
+    #drunkDriving(50)
+    #instance
+    #sum()
+    #printStr('不要说我不行')
+    #test()
+    learnFor2()
+
