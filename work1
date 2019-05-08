@@ -107,11 +107,66 @@ def learnFor2():
     print("100以内奇数之和为:%d"% (sum))
 
 
-if __name__ == '__main__':
-    #drunkDriving(50)
-    #instance
-    #sum()
-    #printStr('不要说我不行')
-    #test()
-    learnFor2()
+###-------"""函数部分"""----------
+##函数是最基本的一种代码抽象的方式
 
+##内置函数
+def fun_create():
+    num = max(1, 20.55, 3, 5.98)
+    a = '123'
+    print(type(a))
+    b = int(a)
+    print(type(b))
+    print(num)
+
+
+##关键字参数
+def model_1():
+    aa = 2
+    bb = 3
+    return aa, bb
+
+
+##位置参数 传入的两个值按照位置顺序依次赋给参数x和n
+
+##默认参数
+##注意 必选参数在前，默认参数在后
+def model_2(a, c, b=5):
+    if b > 0:
+        print("b-a=%d" % (b - a))
+    else:
+        print("b+a=%d" % (b + a))
+
+
+def model_3(name, age, sex='F', address='beijing'):
+    print("name:%s,age:%s,sex:%s,address:%s" % (name, age, sex, address))
+
+
+##可变参
+def model_4(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n
+    print("sum=", sum)
+
+
+def model_5(*numbers):
+    print(max(*numbers))
+
+##匿名函数
+
+
+##匿名函数
+
+
+if __name__ == '__main__':
+    # drunkDriving(50)
+    # instance
+    # sum()
+    # printStr('不要说我不行')
+    # test()
+    # printChart()
+    # print(model_1())
+    # sum(1,-9)
+    # sum_1('fangyu','29',address="changping",sex="M")
+    model_5(4, 5, 6, 7, 9)
